@@ -42,7 +42,7 @@
     "vite": "4.0.4",
     "vue-tsc": "^1.0.24"
   },
-  "git-hooks": {
+  "gitHooks": {
     "pre-commit": "lint-staged"
   }
 }
