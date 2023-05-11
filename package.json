@@ -13,7 +13,8 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --cache"
+    "*.{js,ts,vue}": "eslint --fix",
+    "*.*": "prettier --write"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-3070720230316001",
