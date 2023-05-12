@@ -5,6 +5,7 @@ onLaunch(() => {
 });
 onShow(() => {
   console.log('App Show');
+  console.log(111111);
 });
 onHide(() => {
   console.log('App Hide');
