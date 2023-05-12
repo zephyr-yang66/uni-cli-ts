@@ -11,7 +11,8 @@
     "build:mp-weixin": "uni build -p mp-weixin",
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint --ext \\\".js,.ts,.vue\\\" --ignore-path .gitignore",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
