@@ -9,8 +9,6 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-console.log('111，--------------');
-console.log('使用 vue');
 const title = ref('Hello');
 </script>
 
