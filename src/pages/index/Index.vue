@@ -3,13 +3,22 @@
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
       <text class="title">{{ title }}</text>
+      <text class="title">{{ hello.num }}</text>
     </view>
   </view>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-const title = ref('Hello');
+interface IHello {
+  say: string;
+  num: number;
+}
+import { ref, reactive } from 'vue';
+const title = ref<string>('Hello');
+const hello = reactive<IHello>({
+  say: '22',
+  num: 11,
+});
 </script>
 
 <style>

@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  plugins: ['vue'],
+  plugins: ['vue', '@typescript-eslint'],
   extends: [
     'eslint-config-prettier', // 解决 eslint 和 prettier 冲突
     'eslint:recommended',
@@ -12,7 +12,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   parserOptions: {
-    parser: '@babel/eslint-parser',
+    parser: '@typescript-eslint/parser',
     requireConfigFile: false,
   },
   overrides: [
@@ -24,6 +24,7 @@ module.exports = {
     },
   ],
   rules: {
+    'no-var': 'error',
     'prettier/prettier': 'error',
     // 修改 eslint-plugin-vue 8 组件必须驼峰
     'vue/multi-word-component-names': [
