@@ -1,4 +1,5 @@
 import axios from 'axios';
+import type { AxiosResponse } from 'axios';
 const instance = axios.create({
   baseURL: process.env.BASE_URL || '',
   timeout: 5000,
@@ -6,6 +7,7 @@ const instance = axios.create({
     'Content-Type': 'application/json;charset=UTF-8',
   },
 });
+
 // 添加拦截器
 instance.interceptors.request.use(
   (config) => {
@@ -18,7 +20,7 @@ instance.interceptors.request.use(
   }
 );
 instance.interceptors.response.use(
-  (response) => {
+  (response: AxiosResponse) => {
     // 处理响应数据
     return response.data;
   },
