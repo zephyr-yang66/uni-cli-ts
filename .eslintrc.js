@@ -11,6 +11,9 @@ module.exports = {
     'plugin:vue/vue3-essential',
     'plugin:prettier/recommended',
   ],
+  globals: {
+    uni: 'readonly',
+  },
   parserOptions: {
     parser: '@typescript-eslint/parser',
     requireConfigFile: false,
